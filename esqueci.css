@@ -4,58 +4,7 @@
     margin: 0;
     box-sizing: border-box;
 }
-body{
-    font-family: 'Lexend Deca';
-    font-weight: 400;
-    overflow-x: hidden;
 
-    }
-    
-    
-    .btn-brown {
-    background-color: rgba(226, 204, 174, 1); /* cor marrom */
-    border-color: rgba(226, 204, 174, 1); /* cor da borda */
-    color: #4e3629;
-    width: 10rem;
-    font-weight: 700;
-    font-size: 20px;
-    margin-right: 3rem;
-    font-family: 'Lexend Deca';
-    
-    }
-    #doeagora{
-    font-weight: bold;
-    font-size: 1.2rem;
-    }
-    
-    .btn-brown:hover {
-    background-color: #cc9e879f; /* cor marrom escuro no hover */
-    border-color: #cc9e879f; /* borda marrom escuro no hover */
-    }
-    
-    
-    .img{
-    margin-top: -0.6rem;
-    margin-left: 2rem;
-    }
-
-    .navbar-nav {
-    width: 100%;
-    font-family: "Lexend Deca";
-    justify-content: space-around;
-    }
-
-
-    .container-text {
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: justify; /* Centraliza verticalmente */
-        align-items: center; /* Centraliza horizontalmente */
-        text-align: center; /* Garante alinhamento do texto */
-        min-height: 50vh; /* Faz a div ocupar toda a tela */
-        padding: 1rem;
-    }
     
     .h1 {
         font-family: "Passion One", serif;
