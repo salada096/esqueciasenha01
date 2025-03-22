@@ -7,10 +7,18 @@
 }
 
 body{
-    font-family: 'Lexend Deca';
+    font-family: 'Lexend Deca', serif;
     font-weight: 400;
     overflow-x: hidden;
 
+    }
+
+    #fixited{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+        
     }
     
     
@@ -62,14 +70,14 @@ body{
     .h1sub {
         font-family: "Passion One", serif;
         font-weight: 700;
-        font-size: clamp(2rem, 1.627rem + 0.98vw, 3rem);
+        font-size:33px;
         color: rgba(97, 53, 12, 1);
         margin-top: 2rem; /* Ajusta o espaçamento */
     }
 
     .psub {
         display: flex;
-        font-size: clamp(1rem, 1rem + 0vw, 1rem);
+        font-size: 16px;
         max-width: 82%;
         margin-top: 1rem;
         
@@ -94,9 +102,8 @@ body{
         justify-content: center;   
         align-items: center;       
       
-        padding-top: 1rem;  
-        padding: 0.5rem;   
-      
+        padding-top: 6rem;  
+        
     }
 
     @media (min-width: 1200px) {
