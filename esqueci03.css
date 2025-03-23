@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Passero+One&family=Passion+One:wght@400;700;900&display=swap');
-
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
@@ -12,15 +11,14 @@ body{
     overflow-x: hidden;
 
     }
-
+    
     #fixited{
         position: fixed;
         top: 0;
         width: 100%;
         z-index: 1000;
-        
+       
     }
-    
     
     .btn-brown {
     background-color: rgba(226, 204, 174, 1); /* cor marrom */
@@ -56,172 +54,236 @@ body{
     }
 
 
-    .container-text {
+    .containertext {
         margin: 0 auto;
         display: flex;
         flex-direction: column;
         justify-content: justify; /* Centraliza verticalmente */
         align-items: center; /* Centraliza horizontalmente */
         text-align: center; /* Garante alinhamento do texto */
-        min-height: 50vh; /* Faz a div ocupar toda a tela */
-        padding: 1rem;
+        padding-top: 6rem ;
+        
     }
 
-    .h1sub {
+
+
+
+
+
+    .h1{
         font-family: "Passion One", serif;
         font-weight: 700;
-        font-size:33px;
+        font-size: 33px;
         color: rgba(97, 53, 12, 1);
         margin-top: 2rem; /* Ajusta o espaçamento */
-    }
-
-    .psub {
-        display: flex;
-        font-size: 16px;
-        max-width: 82%;
-        margin-top: 1rem;
-        
        
     }
 
-    @media (min-width: 800px) {
-        .psub {
 
-            max-width: 42%;
-            
-            
-        }
-    }   
-    
-   
-  
-    .containersub{
-
+    .pcd1{
         display: flex;
-        flex-direction: column;
-        justify-content: center;   
-        align-items: center;       
-      
-        padding-top: 6rem;  
-        
-    }
-
-    @media (min-width: 1200px) {
-        .containersub {
-            padding-top: 10rem ;
-            padding-left: 25rem;
-            
-        }
-    }
-    
-   
-
-
-
-    .circle {
-        display: none; /* Esconde o círculo por padrão */
-    }
-    
-   
-    @media (min-width: 1200px) {
-        .circle {
-            display: flex;
-            width: min(54vw, 200px);
-            height: min(54vw, 200px);
-            border-radius: 70%;
-            background-color: #a36d40; 
-            box-shadow: 
-            0 0 0 40px #a36d40,
-            0 0 0 90px #844f20,
-            0 0 0 130px #5e3410,
-            0 0 0 170px #1a0b02;
-            transform: rotate(90deg);
-            position: absolute;
-            right: min(56vh, 6%);
-            left: min(1200px, 15%);
-            top: 16rem;
-            align-items: center;
-           
-            text-align: justify;
-           
-            
-            
-        }
-    }
-      
-    .containersubsub{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;   
-        align-items: center;       
-        text-align: center;      
-        gap: 1rem;
-    
-        padding-bottom: 12rem;
-    }
-
-    @media (min-width: 1200px) {
-        .containersubsub {
-            padding-bottom: 19rem;
-            padding-left: 25rem;
-
-            
-        }
-    }
-
-
-    input[type="email"]{
-        border:solid 0.5px;
-        border-color:  rgb(80, 80, 80);
-        height: 50px;
-        width: 310px;
-        border-radius: 12px;
-        
-        outline: none;
+        font-size: 2px;
+        max-width: 82%;
         font-size: 16px;
-        color: rgb(0, 0, 0);
-        background-color:rgb(255, 255, 255) ;
-        padding: 1rem;
-        
+        margin-right: 8rem;
+       
+   
+       
     }
+    .p11{
 
-    @media(min-width: 800px){
-        input[type="email"]{
-            height: 50px;
-            width: 400px;
-            border-radius: 12px;
-           
-            padding: 1rem;
-        }
-    }
 
-    button[type="submit"]{
-        background-color: rgba(226, 204, 174, 1);
-        border: 0.2px solid; /* cor marrom */
-        border-color:  rgb(12, 12, 12);
-        outline: none; 
-        border-radius: 23px;/* cor da borda */
-        color: #4e3629;
-        width: 6rem;
-        height: 2.5rem;
-       font-weight: 500;
+        display: flex;
         font-size: 12px;
-        margin-top: 1rem;
-        
-        padding: rem;
-        
+        margin-right: 6rem;
+        padding: 0.5rem;
     }
-    @media(min-width: 800px){
-        button[type="submit"]{
-            width: 10rem;
-            height: 3rem;
-            border-radius: 20px;
-            font-size: 16px;
-            margin-top: 1rem;
 
-            
-        }
+
+   
+
+
+    .containertitle {
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    align-items: center;  
+    font-size: 12px;
+    padding-top:6rem;
+   
     }
+    .containerinp{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;  
+        align-items: center;
+       
+
+    }
+
+
+    .containertitlsub{
+
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;  
+        align-items: center;
+        padding-bottom: 5rem;
+        font-size: 16px;
+      
+    }
+
+
+    @media (min-width: 1200px) {
+        .containertitle {
+            padding-top: 8rem ;
+            padding-left: 23rem;
+           
+        }
+        .containerinp{
+        
+        padding-left: 23rem;
+    }
+
+
+       .containertitlsub{
+
+
+        padding-left: 23rem;
+        padding-bottom: 10rem ;
+       }
+}
+
+
+input[type="password"]{
+
+
+    border:solid 0.5px;
+    border-color:  rgb(80, 80, 80);
+    height: 40px;
+    width: 312px;
+    border-radius: 12px;
+    align-items: center;
+    outline: none;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    background-color:rgb(255, 255, 255) ;
+    padding-left: 1rem;
+    padding-top: 0.2rem;
+}
+
+
+
+
+@media(min-width: 800px){
+    input[type="password"]{
+        height: 45px;
+        width: 314px;
+        border-radius: 12px;
+        padding-left: 0.5rem;
+        padding-top: 0.2rem;
+       
+    }
+}
+
+
+
+
+button[type="submit"]{
+    background-color: rgba(226, 204, 174, 1);
+    border: 0.2px solid; /* cor marrom */
+    border-color:  rgb(12, 12, 12);
+    outline: none;
+    border-radius: 23px;/* cor da borda */
+    color: #4e3629;
+    width: 6rem;
+    height: 2.5rem;
+   font-weight: 500;
+    font-size: 12px;
+    margin-top: 1rem;
+   
+    padding: rem;
+   
+}
+@media(min-width: 800px){
+    button[type="submit"]{
+        width: 7rem;
+        height: 3rem;
+        border-radius: 30px;
+        font-size: 16px;
+        margin-top: 1rem;
+
+
+       
+    }
+}
+
+
+.circle {
+    display: none; /* Esconde o círculo por padrão */
+}
+
+
+
+
+@media (min-width: 1200px) {
+    .circle {
+        display: flex;
+        width: min(59vw, 250px);
+        height: min(59vw, 250px);
+        border-radius: 70%;
+        background-color: #a36d40;
+        transform: rotate(90deg);
+        position: absolute;
+        right: 9rem;
+        left: 8rem;
+        top: 18rem;
+        align-items: center;
+       
+        text-align: justify;
+       
+    }
+
+    #cc1{
+
+        right:23rem;
+        top: 6rem;
+        width: min(59vw, 300px);
+        height: min(59vw, 300px);
+        background-color: #70421c;
+    }
+
+    #cc2{
+
+        left:16rem;
+        top: 22rem;
+        width: min(59vw, 300px);
+        height: min(59vw, 300px);
+        background-color: #c28b5e;
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -234,7 +296,6 @@ body{
         background-color: #FCE8D8;
         padding: 20px 50px;
         font-family: 'Lexend Deca', sans-serif;
-        position: relative;
     }
     
     
@@ -397,12 +458,3 @@ body{
       text-decoration: underline;
     }
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
