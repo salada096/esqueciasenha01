@@ -76,7 +76,7 @@ body{
         margin-right:15rem; /* Ajusta o espaçamento */
     }
 
-    @media(min-width: 800px){
+    @media(min-width: 1200px){
         .h1{
             margin-right: 20rem;
         }
@@ -92,7 +92,7 @@ body{
        
     }
 
-    @media (min-width: 800px) {
+    @media (min-width: 1200px) {
         .p {
 
             max-width: 42%;
@@ -116,7 +116,7 @@ body{
         
     }
 
-    @media(min-width: 800px){
+    @media(min-width: 1200px){
         input[type="email"]{
             height: 50px;
             width: 400px;
@@ -149,7 +149,7 @@ body{
         padding: rem;
         
     }
-    @media(min-width: 800px){
+    @media(min-width: 1200px){
         button[type="submit"]{
             width: 10rem;
             height: 3rem;
@@ -168,7 +168,7 @@ body{
         align-items: center;
         margin-top: 6rem;
     }
-    @media(min-width: 800px){
+    @media(min-width: 1200px){
         .containerhh{
             margin-left: 23rem;
             margin-top: 10rem;
@@ -182,7 +182,7 @@ body{
         align-items: center;
         
     }
-    @media(min-width: 800px){
+    @media(min-width: 1200px){
         .containerpp{
             margin-left: 23rem;
             
@@ -195,7 +195,7 @@ body{
        margin-right: 10rem;
     }
 
-    @media(min-width: 800px){
+    @media(min-width: 1200px){
         .esqueceu{
             margin-right: 15rem;
         }
@@ -224,9 +224,50 @@ body{
             right: 9rem;
             left: 3rem;
             top: 18rem;
-            align-items: center;
+           
            
             text-align: justify;
+           
+        }
+
+        .square{
+            display: flex;
+            width: min(59vw, 250px);
+            height: min(59vw, 250px);
+            background-color: rgb(56, 29, 3, 1);
+            position: absolute;
+           
+          
+           
+            align-items: center;
+            text-align: justify;
+
+        }
+
+        
+
+        #ss6{
+
+            top: 23rem;
+
+     
+        }
+        #ss7{
+            top: 46rem;
+           
+        }
+
+        #ss8{
+            top: 48rem;
+          
+            width: min(99vw, 10000px);
+            height: min(59vw, 250px);
+        }
+        #ss9{
+            top: 42rem;
+           text-align: end;
+            transform: rotate(120deg);
+            left: 55rem;
            
         }
         #cc{
@@ -247,11 +288,11 @@ body{
     
         #cc2{
     
-            left:4rem;
+            right:2rem;
             top: 22rem;
-            width: min(59vw, 400px);
-            height: min(59vw, 300px);
-            transform: rotate(160deg);
+            width: min(59vw, 600px);
+            height: min(59vw, 400px);
+            transform: rotate(180deg);
            ;
     
         }
@@ -263,6 +304,28 @@ body{
             height: min(59vw, 300px);
             
             transform: rotate(55deg);
+        }
+
+        #cc4{
+
+            margin-left: 12rem;
+          
+            top: 38rem;
+            width: min(59vw, 600px);
+            height: min(59vw, 300px);
+            transform: rotate(180deg);
+            
+        }
+
+        #cc5{
+            margin-left: 56rem;
+           text-align: end;
+            top: 32rem;
+            width: min(59vw, 600px);
+          
+            height: min(59vw, 300px);
+            transform: rotate(180deg);
+            
         }
 
     }
