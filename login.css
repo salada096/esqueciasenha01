@@ -306,6 +306,13 @@ body{
             transform: rotate(55deg);
         }
 
+        .containercircle{
+
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+
         #cc4{
 
             margin-left: 12rem;
@@ -319,7 +326,7 @@ body{
 
         #cc5{
             margin-left: 56rem;
-           text-align: end;
+        
             top: 32rem;
             width: min(59vw, 600px);
           
@@ -328,5 +335,12 @@ body{
             
         }
 
+        #cc6{
+
+            margin-left: 82rem;
+            top: 42rem;
+
+        }
+
     }
-    
+  
