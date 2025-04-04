@@ -186,7 +186,7 @@ body{
     @media(min-width: 800px){
         .containerpp{
             margin-left: 23rem;
-            padding-bottom: 17rem;
+            padding-bottom: 16rem;
         }
     }
 
@@ -371,7 +371,17 @@ body{
 
     }
 
-  
+    .medium {
+        display: none;
+     
+    }
+
+
+    @media (min-width:800px){
+        .medium {
+            min-height: 100vh; /* Faz a div ocupar toda a tela */
+        }
+    }
     
     
     footer {
@@ -476,7 +486,7 @@ body{
     }
     
     
-    @media (max-width: 900px){
+    @media (max-width: 850px){
       
       footer {
       background-color: #FCE8D8;

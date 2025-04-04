@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap");
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+
+    font-family: 'Lexend Deca';
+    font-size: 16px;
+
+}
+
+.containeer{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    max-width: 100%;
+    margin-top: 4rem;
+    z-index: 1000;
+}
+.image{
+    margin-top: -8rem;
+    margin-right: 50rem;
+    height:100px;
+    width:100px;
+}
+
+.imageem{
+    margin-top: -8rem;
+    margin-right: 50rem;
+    height:100px;
+    width:100px;
+}
+  
+  
+
+.container_c{
+
+    width:39rem;
+    height: 6rem;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding:1.5rem;
+   
+}
+
+.hh{
+    font-family: "Passion One", serif;
+    font-weight: 700;
+    font-size:25px;
+    color: rgba(97, 53, 12, 1);
+    margin-top: 4rem; /* Ajusta o espaçamento */
+    padding:2rem;
+}
+
+.containercc{
+
+    width:39rem;
+    height: 6rem;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding:1.5rem;
+   
+   
+}
+
+.oo{
+
+    margin-right: 18rem;
+}
+.ooo{
+
+    margin-right: 20rem;
+}
+
+
