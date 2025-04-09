@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Passero+One&family=Passion+One:wght@400;700;900&display=swap');
+
+*{
+    margin:0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lexend Deca', serif;
+    font-weight: 400;
+   font-size: 12px;
+  
+    
+}
+
+.title{
+    
+    font-family: 'Passion One';
+    font-size:30rem;
+    color:rgba(97, 53, 12, 1);
+    font-size: 23px;
+    padding: 6rem;
+   
+}
+.quadrado_principal{
+    width: 60rem;
+    height: 60rem;
+    display: flex;
+   gap: 15rem;
+    justify-content: center;
+    padding: 3rem;
+    margin: 0 auto;
+    align-self: center;
+   
+    background-color:rgba(196, 168, 141, 1);
+    border-radius: 20px;
+}
+.sec1{
+    display: flex;
+   
+    flex-direction: column;
+    text-align: center;
+   
+}
+
+.geral{
+    margin-top: 4rem;
+}
+.botao{
+    margin-top: 8rem;
+}
+.bbotao{
+    margin-top: 16rem;
+    margin-left: 9rem;
+}
+
+.quadradinho{
+    display: none;
+}
+
+#calcadosquantidade{
+    margin-top: 1rem;
+    height: 35px;
+    padding: 1rem;
+    font-size: 16px;
+    width:260px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+#calcadosdescricao{
+    margin-top: 1rem;
+    height: 35px;
+    padding: 1rem;
+    font-size: 16px;
+    width:260px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+#calcadosgenero{
+    margin-top: 1rem;
+    height: 35px;
+    font-size: 16px;
+    width:260px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+#calcadosqualidade{
+    margin-top: 1rem;
+    height: 35px;
+    font-size: 16px;
+    width:260px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+#bbotao{
+    background-color:transparent; 
+    border-color: transparent; 
+    color: #4e3629;
+    font-size: 16px;
+    font-weight: 700;
+   
+}
+#sap{
+    display: none;
+}
+
+#bb{
+    display: none;
+}
+.bootao{
+    display: none;
+}
+#roupasgenero{
+    margin-top: 1rem;
+    font-size: 16px;
+    height: 35px;
+    width:260px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+#roupasqualidade{
+    margin-top: 1rem;
+    height: 35px;
+    width:260px;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    border: none;
+}
+
+#roupasquantidade{
+    margin-top: 1rem;
+    height: 35px;
+    padding: 1rem;
+    width:260px;
+    font-size: 16px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+#roupasdescricao{
+    margin-top: 1rem;
+    height: 35px;
+    padding: 1rem;
+    font-size: 16px;
+    width:260px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+#roupastipo{
+    margin-top: 1rem;
+    height: 35px;
+    padding: 1rem;
+    font-size: 16px;
+    width:260px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+.sec2{
+    
+    display: flex;
+    flex-direction: column;
+    
+  
+}
+
+.botaodoacao{
+   
+    background-color: rgba(226, 204, 174, 1);
+    border: none;
+    outline: none; 
+    border-radius: 15px;
+   
+    color: #4e3629;
+    width: 8rem;
+    height: 2.5rem;
+    font-weight: 700;
+    font-size: 16px;
+     
+}
+
+.fontsize{
+    font-size: 24px;
+    font-family: 'Lexend Deca', serif;
+    color:rgba(97, 53, 12, 1);
+    font-weight: 700;
+}
+
+.ccolor{
+
+    font-size: 16px;
+    color: beige;
+}
+
+@media(max-width: 800px){
+
+    .quadrado_principal{
+        width: 21.3rem;
+        height: 50rem;
+      
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+      
+        justify-content: center;
+        
+        
+         align-self: center;
+        
+       
+     }
+     #calcados{
+        display: none;
+     }
+
+     
+     .material-symbols-outlined {
+       font-variation-settings:
+       'FILL' 1,
+       'wght' 200,
+       'GRAD' 0,
+       'opsz' 30
+       
+      
+     }
+
+     #bb{
+        display: block;
+        color: rgba(97, 53, 12, 1);
+        font-size: 35px;
+        border: 1px solid black;
+        border: none;
+     }
+    
+
+     .ccolor{
+        font-size: 16px;
+     }
+
+     
+    
+    .title{
+        font-size: 20px;
+        padding: 2rem;
+        margin-bottom: 4rem;
+    }
+    
+    .geral{
+        margin-top:2rem;
+    }
+    .sec1{
+        display: flex;
+       
+        flex-direction: column;
+        text-align: center;
+       
+    }
+    #roupasgenero{
+        margin-top: 1rem;
+        font-size: 13px;
+        height: 35px;
+        width:260px;
+        border-radius: 5px;
+        outline: none;
+        border: none;
+    }
+    #roupasqualidade{
+        margin-top: 1rem;
+        height: 35px;
+        width:260px;
+        border-radius: 5px;
+        font-size: 13px;
+        outline: none;
+        border: none;
+    }
+        .fontsize{
+            font-size: 24px;
+            margin-top: 2rem;
+            font-family: 'Lexend Deca', serif;
+            color:rgba(97, 53, 12, 1);
+            font-weight: 700;
+        }
+        #bottao{
+            
+            background-color: rgba(226, 204, 174, 1);
+            border: 0.2px solid; 
+            border-color:  rgb(12, 12, 12);
+            outline: none; 
+            border-radius: 15px;
+            color: #4e3629;
+            border:none;
+            width: 6rem;
+            height: 2.5rem;
+            font-weight: 700;
+            font-size: 16px;
+            
+        }
+        .bootao{
+            display: block;
+            margin-left: 10rem;
+            margin-top: -2rem;
+        }
+        #calcadosgenero{
+            margin-top: 1rem;
+            height: 35px;
+            font-size: 13px;
+            width:260px;
+            border-radius: 5px;
+            outline: none;
+            border: none;
+        }
+        
+        #calcadosqualidade{
+            margin-top: 1rem;
+            height: 35px;
+            font-size: 13px;
+            width:260px;
+            border-radius: 5px;
+            outline: none;
+            border: none;
+        }
+
+        #quadradinho{
+            display: block;
+            width: 4rem;
+            height: 3rem;
+            background-color:rgba(226, 204, 174, 1);
+            border: none;
+            margin-top: -8rem;
+            margin-left: 14rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+        }
+
+        #quadra{
+            display: block;
+            width: 4rem;
+            height: 3rem;
+            background-color:rgba(226, 204, 174, 1);
+            border: none;
+            margin-top: -8rem;
+            margin-left: 14rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+
+        }
+        #sap{
+            display: block;
+            color: rgba(97, 53, 12, 1);
+            font-size: 35px;
+        }
+
+       
+    .material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 200,
+    'GRAD' 0,
+    'opsz' 24
+    }
+
+    }
