@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Passero+One&family=Passion+One:wght@400;700;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lexend Deca', serif;
+    font-weight: 400;
+    overflow-x: hidden;
+
+    }
+    
+    #fixited{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+       
+    }
+    
+    .btn-brown {
+    background-color: rgba(226, 204, 174, 1); /* cor marrom */
+    border-color: rgba(226, 204, 174, 1); /* cor da borda */
+    color: #4e3629;
+    width: 10rem;
+    font-weight: 700;
+    font-size: 20px;
+    margin-right: 3rem;
+    font-family: 'Lexend Deca';
+    
+    }
+    #doeagora{
+    font-weight: bold;
+    font-size: 1.2rem;
+    }
+    
+    .btn-brown:hover {
+    background-color: #cc9e879f; /* cor marrom escuro no hover */
+    border-color: #cc9e879f; /* borda marrom escuro no hover */
+    }
+    
+    
+    .img{
+    margin-top: -0.6rem;
+    margin-left: 2rem;
+    }
+
+    .navbar-nav {
+    width: 100%;
+    font-family: "Lexend Deca";
+    justify-content: space-around;
+    }
+
+    body{
+        font-family: 'Lexend Deca', serif;
+        font-weight: 400;
+        overflow-x: hidden;
+    }
+
+
+    .h1{
+        font-family: "Passion One", serif;
+        font-weight: 700;
+        font-size: 36px;
+        
+        color: rgba(97, 53, 12, 1);
+        
+         /* Ajusta o espaçamento */
+        
+    }
+
+    .containernome{
+        display: flex;
+        flex-direction: column;
+       margin-right: 5rem;
+       gap: 1rem;
+    }
+
+    .containerloginprincipal{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+        
+        position: absolute;
+        border-radius: 45px;
+        margin-left: 48rem;
+        width: 620px;
+        height: 620px;
+    
+       
+
+    }
+
+    @media(min-width: 1500px) {
+        .containerloginprincipal {
+            margin-left: 58rem;
+           
+        }
+    }
+
+    @media(min-width:2000px){
+
+      .containerloginprincipal {
+        margin-left: 88rem;
+       
+    }
+
+    }
+
+    @media(min-width:1800px){
+      .containerloginprincipal{
+        margin-left:67rem;
+      }
+    }
+
+
+    input[type="email"], input[type="password"] {
+        height: 50px;
+        width: 400px;
+        outline: none;
+        border-radius: 12px;
+        border: 1px solid black;
+        padding: 1rem;
+    }
+
+   .containerbtn{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left:7rem;
+        margin-top: 1rem;
+       
+        
+    }
+
+   
+
+    .containeresqueceu{
+        display: flex;
+        flex-direction: column;
+       
+        margin-top: -2rem;
+    }
+
+    .esqueceu{
+
+        color: #EC5907;
+        
+        
+    }
+
+
+.esqueceu:hover{
+
+    color: #a36d40;
+    text-decoration: underline;
+    
+}
+
+.nomezinho{
+  position:absolute;
+  margin-top:9rem;
+  padding:4rem;
+ 
+}
+.hh{
+  display:flex;
+  flex-direction:row;
+}
+.h{
+  font-size:32px;
+  color:rgb(90, 48, 8);
+  FONT-weight:500;
+
+
+}
+.h2{
+  
+  font-size:35px;
+  color:rgb(90, 48, 8);
+  FONT-weight:500;
+}
+.pezinho{
+  font-size:22px;
+  color: rgb(82, 40, 2);
+  max-width: 450px;
+
+}
+.faixa-imagem {
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+  }
+  
+  .faixa-imagem img {
+    width: 90vw;
+    height:40rem;
+    display: block;
+   
+bottom: 0;
+
+  }
+
+main {
+    margin-bottom: 0;
+    padding-bottom: 0;
+   
+  }
+  #imgcima{
+    display: none;
+  }
+
+
+
+
+
+
+
+
+
+    button[type="submit"] {
+        height: 50px;
+        width: 150px;
+        outline: none;
+        border-radius: 20px;
+        border: none;
+        cursor: pointer;
+        padding: 0.5rem;
+        background-color: rgba(226, 204, 174, 1); /* cor marrom */
+        color: #4e3629;
+        font-weight: 600;
+        font-size: 16px;
+     
+    }
+    button[type="submit"]:hover {
+        background-color: #cc9e879f; /* cor marrom escuro no hover */
+        border-color: #cc9e879f; /* borda marrom escuro no hover */
+        }
+
+
+      
+      @media (max-width: 780px) {
+        .containerloginprincipal {
+          width: 90%;
+          height: auto;
+          padding: 20px;
+          margin-left: 0;
+          margin-top: 2rem;
+        }
+        
+        input[type="email"],
+        input[type="password"] {
+          width: 100%;
+        }
+        
+        button[type="submit"] {
+          width: 100%;
+        }
+
+        .faixa-imagem {
+          
+          display:  none;
+        }
+        
+        .faixa-imagem img {
+          
+          display: none;
+      
+        }
+
+        main {
+         
+        
+          margin-bottom: 20rem;
+        }
+        .containerloginprincipal{
+          position:relative;
+        }
+
+        #imgcima{
+          display: block;
+        }
+        
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        footer {
+            background-color: #FCE8D8;
+            padding: 1.25rem 3.125rem;
+            margin-top:0;
+          
+            font-family: "Lexend Deca", sans-serif;
+            z-index: 2;
+          }
+          
+          
+          .footer-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 2.50rem;
+          }
+          
+          
+          .footer-left {
+            max-width: 25rem;
+            font-size: 0.75rem;
+          }
+          
+          
+          .footer-logo {
+            height: 90px;
+            margin-bottom: 0.625rem;
+          }
+          
+          
+          .footer-right {
+            display: flex;
+            gap: 40px;
+            margin-top: 20px;
+          }
+          
+          
+          .footer-column {
+            flex: 2;
+            min-width: 200px;
+            text-align: center;
+          }
+          
+          
+          .footer-column h3 {
+            font-weight: 25rem;
+            font-size: 16px;
+            color: #535151;
+            margin-bottom: 0.625rem;
+          }
+          .footer-column a:hover {
+            color: #8B7777;
+          }
+          
+          
+          .footer-column a {
+            color: #EC5907;
+            text-decoration: none;
+            font-size: 12px;
+            display: block;
+            margin-bottom: 0.3125rem;
+          }
+          
+          
+          .footer-column a:hover {
+            text-decoration: underline;
+          }
+          
+          
+          
+          @media (max-width: 768px) {
+            footer {
+              padding: 15px 30px;
+            }
+          
+          
+            .footer-container {
+              flex-direction: column;
+              align-items: center;
+              text-align: center;
+            }
+          
+          
+            .footer-left {
+              max-width: 100%;
+            }
+          
+          
+            .footer-logo {
+              height: 70px;
+            }
+          
+          
+            .footer-right {
+              flex-direction: column;
+              gap: 20px;
+              width: 100%;
+            }
+          
+          
+            .footer-column {
+              min-width: auto;
+            }
+          }
