@@ -1,0 +1,403 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Donatário</title>
+    <link rel="stylesheet" href="cadrastro.css">
+    
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Passion+One:wght@400;700;900&display=swap" rel="stylesheet"/>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_back" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="shortcut icon" href="https://i.ibb.co/7NybZ3W7/1.png" type="image/x-icon">
+</head>
+<body>
+
+    <section>
+
+<header>
+    <nav id="fixado" class="navbar navbar-expand-lg navbar-light bg-light">
+      <!-- Adicionando a imagem à esquerda da navbar -->
+      <a class="navbar-brand" href="#">
+        <img
+          src="https://i.postimg.cc/g0RvMKxc/2475bcce-285c-4b1b-b92b-8e3b0680fef1.png"
+          width="130"
+          height="40"
+          alt="Logo"
+          class="img"
+        />
+      </a>
+      <button
+        id="icone" 
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#conteudoNavbarSuportado"
+        aria-controls="conteudoNavbarSuportado"
+        aria-expanded="false"
+        aria-label="Alterna navegação"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+        <ul class="navbar-nav mr-auto">
+          <li>
+            <a id="inicio" class="nav-link" href="index.html" title="Inicio"
+              >Início</a
+            >
+          </li>
+          <li class="nav-item">
+            <a id="quem" class="nav-link" href="quemsomos1.html" title="Quem somos"
+              >Quem somos?</a
+            >
+          </li>
+          <li class="nav-item">
+            <a id="saiba" class="nav-link" href="saibamais1.html" title="Saiba mais"
+              >Saiba mais
+            </a>
+          </li>
+          <li class="nav-item">
+            <a id="entrar" class="nav-link" href="entrar1.html" title="Entrar">Entrar</a>
+          </li>
+          
+          <li class="nav-item dropdown">
+            <a
+              style="color: #000; "
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              title="Cadastre-se"
+            >
+              Cadastre-se <span class="sr-only">(página atual)</span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a
+                id="dona1"
+                class="dropdown-item" title="Cadastro do donatário"
+                href="cadastrodonatario1.html"
+                >Cadastro Donatário
+              </a>
+              <a
+                id="doap"
+                class="dropdown-item" title="Cadastro do doador-pessoa"
+                href="cadastrodoadorpessoa1.html"
+                >Cadastro Doador-Pessoa
+              </a>
+              <a
+                id="doain"
+                class="dropdown-item" title="Cadastro do doador-instituição"
+                href="cadastrodoadorinstituição1.html"
+                >Cadastro Doador Instituição</a
+              >
+            </div>
+          </li>
+        </ul>
+        <!-- O botão permanece inalterado -->
+        <button class="btn btn-brown" type="button" id="doeagora">
+          Doe agora
+        </button>
+      </div>
+    </nav>
+  </header>
+</section>
+<br>
+<br>
+<br>
+
+<div class="container">
+  <h1 class="titulo">Cadastro Do Doador -Donatário</h1>
+  
+  <div class="passos-container">
+      <div class="passo ativo">3° passo</div>
+      <a href="#"><div class="passo">4° passo</div></a> 
+  </div>
+  
+  <div class="formulario">
+      <p class="aviso">Recomendamos atenção total ao preencher os dados nos campos solicitados. É fundamental que as informações sejam inseridas de forma responsável, a fim de evitar fraudes.</p>
+    
+    <form action="verificar-js">  
+      <section id="maio">
+          <div class="campo">
+              <label for="filedon">Foto 3X4: <span class="obrigatorio">*</span></label>
+              <label id="filedon">Upload arquivo
+                  <input type="file" id="filedon" name="file-don" placeholder="Upload da Foto" accept="image/*" required>
+              </label>
+          </div>
+          
+          <div class="requisitos-senha">
+              <p class="requisitos-secundarios">- A foto 3x4 deve ter boa qualidade e mostrar o rosto do usuário</p>
+              <p class="requisitos-secundarios">- O video esclarecedor deve mostrar os dessatres ocorridos, após enchentes, alagamentos ou delizamentos de terra</p>
+              <p class="requisitos-secundarios">- Grave um video com boa iluminação e escreva a baixo maiores observações (Duração máxima: 2min)</p>
+          </div>
+      </section>
+      
+      <div class="campo">
+          <label for="videodon">Video Esclarecedor: <span class="obrigatorio">*</span></label>
+          <label id="videodon"> Upload arquivo
+              <input type="file" id="videodon" name="videodon" placeholder="Upload do video" accept="video/*" required>
+          </label>
+      </div>
+      
+      <div class="campo">
+          <label for="campos">Observações: <span class="obrigatorio">*</span></label>
+          <textarea id="campos" name="obvdon" placeholder="Observação" required></textarea>
+      </div>
+    
+      <div class="botoes">
+          <button type="button" id="botao" class="botao-final">Continuar</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- Modal de erros -->
+<div class="modal fade" id="erroSenhaModal" tabindex="-1" aria-labelledby="erroSenhaModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="erroSenhaModalLabel">Atenção</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+          </div>
+          <div class="modal-body" id="erroSenhaModalBody">
+              <!-- Mensagem de erro será inserida aqui -->
+          </div>
+          <div class="modal-footer">
+              <button id="botao-validar" type="button" class="btn btn-primary" data-bs-dismiss="modal">Entendi</button>
+          </div>
+      </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-container">
+      <!-- Logo e descrição -->
+      <div class="footer-left">
+          <img
+              src="https://i.postimg.cc/g0RvMKxc/2475bcce-285c-4b1b-b92b-8e3b0680fef1.png"
+              alt="Logo Enchant"
+              class="footer-logo"
+              title="Logo-Enchant"
+          />
+          <p>
+              De forma alguma o ENCHANT foi criado com o intuito de desviar
+              os termos relacionados à política de privacidade do
+              cadastrante. O site está disponível para toda e qualquer ajuda
+              em relação aos contatos. O site que aqui explica não aceita
+              qualquer violência verbal, sendo contra toda e qualquer
+              atividade agressiva.
+          </p>
+          <p>© 2025 ENCHANT Brasil</p>
+      </div>
+
+      <!-- Links de navegação -->
+      <div class="footer-right">
+          <div class="footer-column">
+              <h3>MAIS INFORMAÇÕES</h3>
+              <a href="saibamais1.html" title="Conheça mais sobre o ENCHANT - clique">Conheça mais sobre o ENCHANT</a>
+          </div>
+          <div class="footer-column" title="PROTEÇÃO DE DADOS - clique">
+              <h3>PROTEÇÃO DE DADOS</h3>
+              <a href="politica1.html">Política de privacidade</a>
+          </div>
+          <div class="footer-column" title="ACOMPANHE NOSSAS REDES - clique">
+              <h3>ACOMPANHE NOSSAS REDES</h3>
+              <a href="https://www.instagram.com/enchant_pa?igsh=MXE5MTZqendmdDJheQ%3D%3D&utm_source=qr" target="_blank">Instagram - enchant_pa</a>
+              <a href="https://www.linkedin.com/in/enchant-pa-4a5079358?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">Linkedn - enchant_pa</a>
+          </div>
+      </div>
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Script de validação customizado -->
+<script>
+// Script de validação para o formulário de cadastro donatário
+document.addEventListener('DOMContentLoaded', function() {
+  // Seleciona o formulário e botões
+  const form = document.querySelector('form[action="verificar-js"]');
+  const continueButton = document.getElementById('botao');
+  
+  // Adiciona evento de clique ao botão de continuar
+  if (continueButton) {
+      continueButton.addEventListener('click', function(event) {
+          event.preventDefault();
+          validateForm();
+      });
+  }
+  
+  // Função para validar todo o formulário
+  function validateForm() {
+      // Seleciona os campos obrigatórios
+      const fileInput = document.getElementById('filedon');
+      const videoInput = document.getElementById('videodon');
+      const observacaoInput = document.getElementById('campos');
+      
+      // Array para armazenar mensagens de erro
+      const errors = [];
+      
+      // Verifica se os campos estão preenchidos
+      if (!fileInput || !fileInput.files || !fileInput.files.length) {
+          errors.push("Por favor, selecione uma foto 3x4.");
+      }
+      
+      if (!videoInput || !videoInput.files || !videoInput.files.length) {
+          errors.push("Por favor, selecione um vídeo esclarecedor.");
+      }
+      
+      if (!observacaoInput || observacaoInput.value.trim() === '') {
+          errors.push("Por favor, preencha o campo de observações.");
+      }
+      
+      // Se houver arquivos selecionados, verifica tamanho e proporção
+      if (fileInput && fileInput.files && fileInput.files.length > 0) {
+          const file = fileInput.files[0];
+          
+          // Verifica a proporção da imagem
+          const reader = new FileReader();
+          reader.onload = function(e) {
+              const img = new Image();
+              img.onload = function() {
+                  const width = this.width;
+                  const height = this.height;
+                  
+                  // Verifica a proporção 3:4 (com margem de erro)
+                  const ratio = width / height;
+                  const targetRatio = 0.75; // 3/4
+                  
+                  if (Math.abs(ratio - targetRatio) > 0.1) { // 10% de margem de erro
+                      errors.push("A foto deve ter proporção 3x4.");
+                  }
+                  
+                  // Continua a validação após verificar a imagem
+                  continueValidation();
+              };
+              img.src = e.target.result;
+          };
+          reader.readAsDataURL(file);
+          
+          // Não continua imediatamente, aguarda o carregamento da imagem
+          return;
+      }
+      
+      // Se não tiver arquivo de imagem, continua a validação
+      continueValidation();
+      
+      function continueValidation() {
+          if (videoInput && videoInput.files && videoInput.files.length > 0) {
+              // Verifica o tamanho do vídeo (máximo 20MB)
+              const videoFile = videoInput.files[0];
+              const maxSize = 20 * 1024 * 1024; // 20MB em bytes
+              
+              if (videoFile.size > maxSize) {
+                  errors.push("O vídeo deve ter no máximo 20MB.");
+              }
+          }
+          
+          // Se houver erros, mostra no modal
+          if (errors.length > 0) {
+              showErrorsInModal(errors);
+          } else {
+              // Se tudo estiver válido, pode prosseguir para o próximo passo
+              alert("Formulário validado com sucesso! Redirecionando para o próximo passo.");
+              // Aqui você pode submeter o formulário ou redirecionar
+              // window.location.href = "proximo-passo.html";
+          }
+      }
+  }
+  
+  // Função para mostrar erros no modal bootstrap
+  function showErrorsInModal(errors) {
+      const modalBody = document.getElementById('erroSenhaModalBody');
+      
+      if (modalBody) {
+          // Limpa conteúdo anterior
+          modalBody.innerHTML = '';
+          
+          // Adiciona título
+          const titleElement = document.createElement('p');
+          titleElement.textContent = 'Por favor, corrija os seguintes problemas:';
+          modalBody.appendChild(titleElement);
+          
+          // Cria lista de erros
+          const errorList = document.createElement('ul');
+          errorList.style.textAlign = 'left';
+          errorList.style.color = '#d9534f';
+          
+          // Adiciona cada erro à lista
+          errors.forEach(function(error) {
+              const listItem = document.createElement('li');
+              listItem.textContent = error;
+              errorList.appendChild(listItem);
+          });
+          
+          modalBody.appendChild(errorList);
+          
+          // Mostra o modal usando Bootstrap
+          const erroModal = new bootstrap.Modal(document.getElementById('erroSenhaModal'));
+          erroModal.show();
+      } else {
+          // Fallback se o modal não for encontrado
+          alert('Erros encontrados:\n\n' + errors.join('\n'));
+      }
+  }
+  
+  // Melhora a experiência para uploads de arquivos
+  function setupFileInput(inputId, maxSizeMB, sizeWarningMessage) {
+      const input = document.getElementById(inputId);
+      if (!input) return;
+      
+      input.addEventListener('change', function() {
+          if (this.files && this.files[0]) {
+              const file = this.files[0];
+              const fileSize = (file.size / (1024 * 1024)).toFixed(2); // em MB
+              const maxSize = maxSizeMB || Infinity;
+              
+              // Atualiza o texto do label
+              const label = this.closest('label');
+              if (label) {
+                  // Salva o texto original se ainda não tiver
+                  if (!label.dataset.originalText) {
+                      label.dataset.originalText = label.textContent;
+                  }
+                  
+                  // Atualiza com informações do arquivo
+                  label.textContent = `${file.name} (${fileSize}MB)`;
+                  
+                  // Readiciona o input
+                  this.remove();
+                  label.appendChild(this);
+                  
+                  // Aviso se o arquivo for muito grande
+                  if (maxSize && file.size > maxSize * 1024 * 1024 && sizeWarningMessage) {
+                      alert(sizeWarningMessage);
+                  }
+              }
+          }
+      });
+  }
+  
+  // Configura os inputs de arquivo
+  setupFileInput('filedon');
+  setupFileInput('videodon', 20, 'Atenção: O vídeo selecionado é maior que 20MB e não será aceito.');
+});
+</script>
+</body>
+</html>
