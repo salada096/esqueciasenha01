@@ -1,0 +1,442 @@
+@import url("https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+
+}
+
+.btn-brown {
+  background-color: rgba(226, 204, 174, 1); /* cor marrom */
+  border-color: rgba(226, 204, 174, 1); /* cor da borda */
+  color: #4E3629;
+  width: 10rem;
+  font-weight: 700;
+  font-size: 20px;
+  margin-right: 3rem;
+  font-family: "Lexend Deca";
+}
+#icone{
+  border:none;
+  outline: none;
+  box-shadow: 0;
+
+}
+#doeagora {
+  font-weight: bold;
+  font-size: 1.2rem;
+  background-color: rgba(226, 204, 174, 1); /* cor marrom */
+}
+
+.btn-brown:hover {
+  background-color: #cc9e879f; /* cor marrom escuro no hover */
+  border-color: #cc9e879f; /* borda marrom escuro no hover */
+}
+
+.img {
+  margin-top: -0.6rem;
+  margin-left: 2rem;
+}
+.navbar-brand {
+  margin-left: 32px;
+  margin-top: -7px;
+}
+.navbar-nav {
+  width: 100%;
+  font-family: "Lexend Deca";
+  justify-content: space-around;
+}
+#fixado {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  top: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.back-button {
+  margin: 20px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.titulo {
+  text-align: center;
+  color: #8B4513;
+  margin: 20px 0;
+  font-family: "Passion One", sans-serif;
+  font-size: 1.7rem;
+}
+
+.passos-container {
+  display: flex;
+  width: 300px;
+  margin-left: auto;
+  margin-right: 40px;
+  text-decoration: none;
+}
+
+.passo.ativo {
+  margin-top: 30px;
+  background-color: #FBF6F1;
+  text-decoration: none;
+}
+
+.passo {
+  flex: 1;
+  margin-top: 30px;
+  text-align: start;
+  padding: 15px;
+  background-color: #c5a26d49;
+  text-decoration: none;
+  align-items: start;
+  color: #000000;
+}
+a {
+  text-decoration: none;
+}
+
+.formulario {
+  background-color: #FBF6F1;
+  padding: 20px;
+  margin: 0 40px 40px;
+}
+
+.aviso {
+  font-size: 0.85rem;
+  margin-bottom: 20px;
+  line-height: 1.4;
+  margin: 20px 40px 40px;
+}
+
+.campo {
+  margin-bottom: 15px;
+  margin: 0 40px 40px;
+  width: auto;
+}
+
+.campo label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.campo label span.obrigatorio {
+  color: red;
+}
+
+#campos {
+
+  width: 100%;
+  padding: 30px;
+  background-color: transparent;
+  border: 1px solid #929191;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  padding-left: 20px;
+}
+
+input[type="file"]  {
+  display: none;
+}
+
+
+#videodon{
+    width: 100%;
+    padding: 80px;
+    background-color: #e2e0dd;
+    color: #91908f;;
+    
+}
+
+#maio{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Distributes space between child elements */
+    align-items: center; /* Aligns items vertically */
+    width: 100%; /* Ensures the container takes up the full width */
+    gap: 1rem;
+ 
+ 
+}
+
+#campos:focus {
+  border-color: #E2CCAE;
+  
+}
+
+
+
+  
+
+#filedon{
+
+    width: 190px;
+    height: 250px;
+    padding: 6rem 2rem;
+    background-color: #e2e0dd;
+    color:#91908f;;
+}
+
+
+
+
+
+.requisitos-senha {
+  font-size: 15px;
+ 
+  margin-top: -1rem;
+ 
+  
+}
+
+.requisitos-senha p {
+    align-self: center;
+    text-align: justify;
+    margin-bottom: 2rem;
+  margin-right:14rem;
+}
+
+
+.sub-sub-titulo {
+  font-size: 0.75rem;
+  color: #666;
+  margin: 0px 40px 40px;
+}
+ #botao {
+    background-color: #E2CCAE;
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    color:#3E3E3E;
+     justify-content: flex-end;
+     font-size: 14px;
+     font-family: "Lexend Deca";
+
+  }
+
+.botoes {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.botao-avancar {
+  background-color: transparent;
+  font-size: 40px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.botao-none {
+  background-color: transparent;
+  border: none;
+}
+#botao-validar{
+  background-color: #E2CCAE;
+  border: none;
+  color: #000000;
+
+}
+footer {
+  background-color: #FCE8D8;
+  padding: 1.25rem 3.125rem;
+  font-family: "Lexend Deca", sans-serif;
+  margin-top: 90px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2.5rem;
+}
+
+.footer-left {
+  max-width: 25rem;
+  font-size: 0.75rem;
+}
+
+.footer-logo {
+  height: 90px;
+  margin-bottom: 0.625rem;
+}
+
+.footer-right {
+  display: flex;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.footer-column {
+  flex: 2;
+  min-width: 200px;
+  text-align: center;
+}
+
+.footer-column h3 {
+  font-weight: 25rem;
+  font-size: 16px;
+  color: #535151;
+  margin-bottom: 0.625rem;
+}
+.footer-column a:hover {
+  color: #8B7777;
+}
+
+.footer-column a {
+  color: #EC5907;
+  text-decoration: none;
+  font-size: 12px;
+  display: block;
+  margin-bottom: 0.3125rem;
+}
+
+.footer-column a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  footer {
+    padding: 15px 30px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-left {
+    max-width: 100%;
+  }
+
+  .footer-logo {
+    height: 70px;
+  }
+
+  .footer-right {
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .footer-column {
+    min-width: auto;
+  }
+}
+
+/* Responsividade */
+@media (min-width: 100px) and (max-width: 950px) {
+  body {
+    overflow-x: hidden;
+  }
+  .formulario {
+    background-color: #fce8d83b;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 14px;
+  }
+
+  
+#campos {
+
+    width: 100%;
+    padding: 30px;
+    background-color: transparent;
+    border: 1px solid #929191;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    padding-left: 20px;
+  }
+  
+  input[type="file"]  {
+    display: none;
+  }
+  
+  
+  #videodon{
+      width: 100%;
+      padding: 80px;
+      background-color: #e2e0dd;
+      color: #91908f;;
+      
+  }
+  
+  #maio{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; /* Distributes space between child elements */
+      align-items: center; /* Aligns items vertically */
+      width: 100%; /* Ensures the container takes up the full width */
+      gap: 1rem;
+   
+   
+  }
+  
+  #campos:focus {
+    border-color: #E2CCAE;
+    
+  }
+  
+  
+  
+    
+  
+  #filedon{
+  
+      width: 120px;
+      height: 100px;
+      padding: 6rem 1rem;
+      background-color: #e2e0dd;
+      color:#91908f;;
+      font-size:12px
+  }
+  
+  #botao {
+    background-color: #E2CCAE;
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    color: #3E3E3E;
+  }
+  .ph ph-arrow-right {
+    text-align: end;
+    justify-items: end;
+  }
+  .aviso {
+    font-size: 14px;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: center;
+  }
+  .passos-container {
+    display: none;
+  }
+  .campo {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .requisitos-senha {
+    margin-left: 5px;
+  }
+  input::placeholder{
+    font-size: 14px;
+  }
+
+}
