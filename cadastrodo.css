@@ -1,1204 +1,469 @@
-@import url("https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
-  font-family: "Lexend Deca", sans-serif;
-}
-
-.titulo {
-  text-align: center;
-  color: #8B4513;
-  margin: 20px 0;
-  font-family: "Passion One", sans-serif;
-  font-size: 1.7rem;
-}
-
-.passos-container {
-  display: flex;
-  width: 300px;
-  margin-left: auto;
-  margin-right: 40px;
-  text-decoration: none;
-}
-
-.passo.ativo {
-  margin-top: 30px;
-  background-color: #FBF6F1;
-  text-decoration: none;
-}
-
-.passo {
-  flex: 1;
-  margin-top: 30px;
-  text-align: start;
-  padding: 15px;
-  background-color: #c5a26d49;
-  text-decoration: none;
-  align-items: start;
-  color: #000000;
-}
-a {
-  text-decoration: none;
-}
-
-
-
-.aviso {
-  font-size: 0.85rem;
-  margin-bottom: 20px;
-  line-height: 1.4;
-  margin: 20px 40px 40px;
-}
-
-.campo {
-  margin-bottom: 15px;
-  margin: 0 40px 40px;
-  width: auto;
-}
-
-.campo label {
-  display: block;
-  margin-bottom: 5px;
-}
-
-.campo label span.obrigatorio {
-  color: red;
-}
-
-#campos {
-
-  width: 100%;
-  padding: 30px;
-  background-color: transparent;
-  border: 1px solid #929191;
-  border-radius: 12px;
-  font-size: 0.9rem;
-  padding-left: 20px;
-}
-
-input[type="file"]  {
-  display: none;
-}
-
-
-#videodon{
-    width: 100%;
-  
-    padding: 80px;
-    font-size: 14px;
-    background-color: #e2e0dd;
-    color: #91908f;;
+document.addEventListener('DOMContentLoaded', function() {
+    // Variáveis para controle de etapas
+    const etapas = [
+        document.getElementById('etapa1'),
+        document.getElementById('etapa2'),
+        document.getElementById('etapa3'),
+        document.getElementById('etapa4')
+    ];
     
-}
-
-#maio{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between; /* Distributes space between child elements */
-    align-items: center; /* Aligns items vertically */
-    width: 100%; /* Ensures the container takes up the full width */
-    gap: 1rem;
- 
- 
-}
-
-#campos:focus {
-  border-color: #E2CCAE;
-  
-}
-
-
-
-  
-
-#filedon{
-
-    width: 190px;
-    height: 250px;
-    padding: 6rem 2rem;
-    background-color: #e2e0dd;
-    color:#91908f;;
-}
-
-.estado-civil{
-    display:flex;
-    flex-direction: row;
-    margin-top: 1rem;
-    font-size:14px;
-    margin-bottom:2rem;
-}
-.estado-civil label {
-    display: flex;
-    align-items: center; /* Alinha verticalmente o botão e o texto */
-    gap: 5px; /* Espaçamento entre o botão e o texto */
-    margin-right: 10px; /* Espaçamento entre os grupos de rádio */
-}
-
-.pessoas{
-    display:flex;
-    flex-direction: row;
-    margin-top: 1rem;
-    font-size:14px;
-    margin-bottom:2rem;
-
-}
-
-input[type="radio"], input[type="checkbox"] {
-    transform: scale(0.6);
-}
-
-
-
-
-.requisitos{
-  font-size: 15px;
- 
-  margin-top: -1rem;
- 
-  
-}
-.camppinho{
-    margin-bottom:2rem;
-}
-.requisitos p {
-    align-self: center;
-    text-align: justify;
-    margin-bottom: 2rem;
-  margin-right:14rem;
-}
-
-
-.sub-sub-titulo {
-  font-size: 0.75rem;
-  color: #666;
-  margin: 0px 40px 40px;
-}
- #botao {
-    background-color: #E2CCAE;
-    width: 150px;
-    height: 40px;
-    border-radius: 10px;
-    border: none;
-    color:#000000;
-     justify-content: flex-end;
-     font-size: 14px;
-     font-family: "Lexend Deca";
-
-  }
-
-  .botaosem{
-  background-color: transparent;
-  border: 1px solid #000000;
-   padding: 0.5rem 3.2rem;
-   border-radius: 10px;
-  color: #000000;
-   font-weight: 400;
-   font-size: 1rem;
-   cursor: pointer;
-   transition: all 0.3s ease;
-  }
-
-.botoes {
-  display: flex;
-  justify-content: flex-end;
-  margin-top: 20px;
-}
-
-.botao-avancar {
-  background-color: transparent;
-  font-size: 40px;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-}
-.botao-none {
-  background-color: transparent;
-  border: none;
-}
-#botao-validar{
-  background-color: #E2CCAE;
-  border: none;
-  color: #000000;
-
-}
-
-
-/* Responsividade */
-@media (min-width: 100px) and (max-width: 950px) {
-  body {
-    overflow-x: hidden;
-  }
-  .formulario {
-    background-color: #fce8d83b;
-    margin-left: 10px;
-    margin-right: 10px;
-    font-size: 14px;
-  }
-
-  
-#campos {
-
-    width: 100%;
-    padding: 30px;
-    background-color: transparent;
-    border: 1px solid #929191;
-    border-radius: 12px;
-    font-size: 0.9rem;
-    padding-left: 20px;
-  }
-  
-  input[type="file"]  {
-    display: none;
-  }
-  
-  
-  #videodon{
-      width: 100%;
-      padding: 80px;
-      background-color: #e2e0dd;
-      color: #91908f;;
-      
-  }
-  
-  #maio{
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between; /* Distributes space between child elements */
-      align-items: center; /* Aligns items vertically */
-      width: 100%; /* Ensures the container takes up the full width */
-      gap: 1rem;
-   
-   
-  }
-  
-  #campos:focus {
-    border-color: #E2CCAE;
+    const passosContainers = [
+        document.querySelector('.passos-container1'),
+        document.querySelector('.passos-container2'),
+        document.querySelector('.passos-container3'),
+        document.querySelector('.passos-container4')
+    ];
     
-  }
-  
-  
-  
+    const passos = [
+        document.getElementById('passo1'),
+        document.getElementById('passo2'),
+        document.getElementById('passo3'),
+        document.getElementById('passo4')
+    ];
+
+    // Listeners para botões de navegação
+    document.getElementById('formEtapa1').addEventListener('submit', validarEtapa1);
+    document.getElementById('formEtapa2').addEventListener('submit', validarEtapa2);
+    document.getElementById('formEtapa3').addEventListener('submit', validarEtapa3);
+    document.getElementById('formEtapa4').addEventListener('submit', validarEtapa4);
     
-  
-  #filedon{
-  
-      width: 120px;
-      height: 100px;
-      padding: 6rem 1rem;
-      background-color: #e2e0dd;
-      color:#91908f;;
-      font-size:12px
-  }
-  
-  #botao {
-    background-color: #E2CCAE;
-    width: 100px;
-    height: 40px;
-    border-radius: 20px;
-    border: none;
-    color: #3E3E3E;
-  }
-  .ph ph-arrow-right {
-    text-align: end;
-    justify-items: end;
-  }
-  .aviso {
-    font-size: 14px;
-    margin-left: 5px;
-    margin-right: 5px;
-    text-align: center;
-  }
-  .passos-container {
-    display: none;
-  }
-  .campo {
-    margin-left: 5px;
-    margin-right: 5px;
-  }
-  .requisitos-senha {
-    margin-left: 5px;
-  }
-  input::placeholder{
-    font-size: 14px;
-  }
-
-}
-
-
-
-
-
-#fixado {
-  position: fixed;
-  width: 100%;
-  z-index: 1000;
-  top: 0;
-  left: 0;
-  padding-left: 16px;
-  padding-right: 16px;
-}
-
-
-.navbar-nav {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  font-size: 14px;
-  gap: 0.5rem;
-  margin-left: 20px;
-}
-
-
-.menu-lateral {
-  justify-content: flex-start;
-  text-align: left;
-}
-
-
-.img {
-  margin-top: -0.6rem;
-  margin-left: 1rem;
-}
-
-
-#dona1,
-#doap,
-#doain {
-  font-size: 14px;
-}
-
-
-#conteudoNavbarSuportado {
-  text-align: left;
-}
-
-
-.nav-centralizada {
-  gap: 1px;
-  display: flex;
-  justify-content: flex-start;
-}
-
-
-.nav-item {
-  margin: 0 5px;
-}
-
-
-#icone {
-  border: none;
-  outline: none;
-}
-
-
-.btn-brown,
-#doeagora {
-  background-color: rgba(226, 204, 174, 1);
-  border-color: rgba(226, 204, 174, 1);
-  color: #4E3629;
-  font-weight: 700;
-  font-family: "Lexend Deca";
-}
-
-
-#doeagora {
-  font-size: 16px;
-  width: 9rem;
-  margin-right: 2rem;
-}
-
-
-#doeagora:hover {
-  background-color: #caae8d;
-}
-
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-
-.titulo {
-  text-align: center;
-  color: #693B11;
-  margin: 40px 0 50px;
-  font-family: "Passion One", sans-serif;
-  font-size: 2rem;
-}
-
-
-.formulario {
-  background-color: #FFF5EA;
-  padding: 30px;
-  margin-bottom: 100px;
-  border-radius: 10px;
-}
-
-
-.campo {
-  margin-bottom: 20px;
-}
-
-
-.campo label {
-  display: block;
-  margin-bottom: 8px;
-  font-weight: 400;
-}
-
-
-.campo label span.obrigatorio {
-  color: red;
-}
-
-
-.campo input, .campo textarea {
-  width: 100%;
-  padding: 10px 15px;
-  border: 1px solid #CCC;
-  border-radius: 20px;
-  font-size: 0.9rem;
-}
-
-
-.campo textarea {
-  resize: vertical;
-  min-height: 100px;
-}
-
-
-#continuar2 {
-  background-color: #E2CCAE; /* Fundo do botão */
-  border: none;
-  color: #3E3E3E;
-  width: 150px;
-  height: 40px;
-  border-radius: 10px;
-  font-size: 14px;
-  cursor: pointer;
-  font-weight: 400;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-
-#continuar2:hover {
-  background-color: #caae8d; /* Fundo mais escuro ao passar o mouse */
-  color: #3d2106; /* Cor do texto ao passar o mouse */
-  border: 1px solid #d8b48bce; /* Borda ao passar o mouse */
-}
-
-
-#voltar1:hover {
-  background-color: #f5f5f5; /* Fundo leve ao passar o mouse */
-  color: #000000; /* Cor do texto ao passar o mouse */
-  border: 1px solid #3E3E3E; /* Borda mais escura ao passar o mouse */
-}
-
-
-#formEtapa1 .botoes{
-  display: flex;
-  justify-content: flex-end; /* Alinha o botão à direita */
-  margin-top: 50px;
-}
-
-
-#formEtapa2 .botoes {
-  display: flex;
-  justify-content: space-between; /* Espaça os botões uniformemente */
-  margin-top: 50px;
-  gap: 20px;
-}
-
-
-#voltar1 {
-  background-color: transparent;
-  width: 150px;
-  height: 40px;
-  border-radius: 10px;
-  border: 1px #000000 solid;
-  color: #3E3E3E;
-  font-size: 16px;
-  cursor: pointer;
-  font-weight: 400;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-
-#continuar1 {
-  background-color: #E2CCAE;
-  width: 150px;
-  height: 40px;
-  border-radius: 10px;
-  border: none;
-  color: #3E3E3E;
-  font-size: 14px;
-  cursor: pointer;
-  font-weight: 400;
-}
-
-
-#continuar1:hover {
-  background-color: #caae8d;
-  color: #3d2106;
-  border: 1px solid #d8b48bce;
-}
-
-
-/* Passos */
-.passos-container1, .passos-container2, .passoscontainer3 {
-  display: flex;
-  width: 100%;
-  margin: 0;
-}
-
-
-.passos-container2 {
-  display: none; /* Oculta o container por padrão */
-}
-
-
-.passo {
-  flex: 1;
-  text-align: center;
-  padding: 12px;
-  background-color: #FFFBF8;
-  color: #000000;
-  border: none;
-}
-
-
-.passo.ativo {
-  background-color: #FFF5EA;
-  font-weight: 500;
-}
-
-
-/* Estilos específicos para a segunda página */
-#etapa2 .formulario {
-  margin-top: 20px; /* Ajuste para encaixar o formulário abaixo dos passos */
-}
-
-#etapa3 .passos-container3{
-    margin-bottom: 10px; 
-}
-
-#etapa2 .passos-container2 {
-  margin-bottom: 10px; /* Ajuste para reduzir o espaço entre os passos e o formulário */
-}
-
-
-.aviso {
-  font-size: 0.85rem;
-  line-height: 1.4;
-  margin: 20px 0;
-}
-
-
-.requisitos-senha {
-  font-size: 0.85rem;
-  color: #666;
-  margin-bottom: 20px;
-}
-
-
-.requisitos-senha p {
-  margin: 3px 0;
-}
-
-
-.requisitos-senha .requisitos-secundarios::before {
-  content: "•";
-  color: red;
-  margin-right: 5px;
-}
-
-
-footer {
-  background-color: #fcf2e8;
-    padding: 20px 50px;
-    font-family: "Lexend Deca", sans-serif;
-  }
- 
- 
-  .footer-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 40px;
-  }
- 
- 
-  .footer-left {
-    max-width: 400px;
-    font-size: 12px;
-    height: 180px;
-  }
- 
- 
-  .footer-left p {
-    font-size: 10px;
-  }
- 
- 
-  footer-left img {
-    width: 200px;
-    height: auto;
-  }
- 
- 
-  .copyright {
-    padding-top: 20px;
-  }
- 
- 
-  .footer-logo {
-    margin-bottom: 10px;
-  }
- 
- 
-  .footer-right {
-    display: flex;
-    gap: 40px;
-    margin-top: 20px;
-  }
- 
- 
-  .footer-column {
-    flex: 2;
-    min-width: 200px;
-    text-align: center;
-  }
- 
- 
-  .footer-column h3 {
-    font-weight: 400;
-    font-size: 14px;
-    color: #535151;
-    margin-bottom: 10px;
-  }
- 
- 
-  .footer-column a {
-    color: #EC9E07;
-    text-decoration: none;
-    font-size: 12px;
-    display: block;
-    margin-bottom: 5px;
-  }
- 
- 
-  .footer-column a:hover {
-    text-decoration: underline;
-    color: #8B7777;
-  }
-
-
-.input-wrapper {
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-
-
-.input-wrapper input {
-  width: 100%;
-  padding-right: 40px;
-}
-
-
-.mostrar-senha {
-  position: absolute;
-  right: 10px;
-  cursor: pointer;
-  color: #888;
-  font-size: 18px;
-}
-
-
-.mostrar-senha:hover {
-  color: #000;
-}
-
-
-.senha-container {
-  display: flex;
-  gap: 20px;
-}
-
-
-.senha-grupo {
-  flex: 1;
-}
-
-
-a {
-  text-decoration: none;
-}
-
-
-/* Responsividade */
-@media (max-width: 768px) {
-
-
-  .btn-brown {
-    width: auto;
-    padding: 5px 15px;
-    font-size: 16px;
-  }
-
-
-  #continuar2, #voltar1{
-      width: 48%;
-      font-size: 14px;
-  }
-
-
-#continuar1{
-  width: 100px;
-}
-
-
-  .passos-container1, .passos-container2,.passoscontainer3 {
-    display: none;
-  }
-
-
-  .botoes {
-    flex-direction: column; /* Empilha os botões em telas menores */
-    gap: 10px; /* Espaço entre os botões */
-    justify-content: space-between;
-  }
-
-
-  #voltar1, #continuar2 {
-    width: 100%; /* Botões ocupam toda a largura */
-  }
-
-
-  #botao-voltar, #botao-avancar {
-    width: 100%;
-  }
-
-
-  footer {
-    padding: 20px 30px;
-  }
-
-
-
-
-  .footer-container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 5px;
-  }
-
-
-
-
-  .footer-left {
-    max-width: 100%;
-  }
-
-
-
-
-  .copyright {
-    margin-bottom: 20px;
-  }
-
-
-
-
-  .footer-logo {
-    height: 50px;
-  }
-
-
-
-
-  .footer-right {
-    flex-direction: column;
-    gap: 20px;
-    width: 100%;
-  }
-
-
-
-
-  .footer-column {
-    min-width: auto;
-  }
-
-
-
-
-  .footer-column h3 {
-    font-weight: 400;
-    font-size: 12px;
-    color: #535151;
-    margin-bottom: 10px;
-  }
-
-
-
-
-  .footer-column a {
-    color: #EC9E07;
-    text-decoration: none;
-    font-size: 10px;
-    display: block;
-    margin-bottom: 5px;
-  }
-
-
-  .senha-container {
-    flex-direction: column;
-  }
-}
-
-
-
-
-@media (min-width: 799px) {
-  .passos-container1, .passos-container2 {
-    display: flex;
-  }
-
-
-  .botoes {
-    flex-direction: row;
-    gap: 10px;
-    justify-content: space-between;
-  }
-
-
-  #botao-voltar, #botao-avancar {
-    width: 48%;
-    font-size: 14px;
-  }
-
-
-  footer {
-    padding: 20px 50px;
-    font-family: "Lexend Deca", sans-serif;
-  }
-
-
-
-
-  .footer-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 40px;
-  }
-
-
-
-
-  .footer-left {
-    max-width: 280px;
-  }
-
-
-
-
-  .footer-left p {
-    font-size: 10px;
-  }
-
-
-
-
-  .footer-logo {
-    height: 50px;
-    margin-bottom: 10px;
-  }
-
-
-
-
-  .footer-right {
-    display: flex;
-    gap: 10px;
-    margin-top: 20px;
-  }
-
-
-
-
-  .footer-column {
-    flex: 2;
-    min-width: 100px;
-    text-align: center;
-  }
-
-
-
-
-  .footer-column h3 {
-    font-weight: 400;
-    font-size: 10px;
-    color: #535151;
-    margin-bottom: 10px;
-  }
-
-
-
-
-  .footer-column a {
-    color: #EC9E07;
-    text-decoration: none;
-    font-size: 8px;
-    display: block;
-    margin-bottom: 5px;
-  }
-
-
-
-
-  .footer-column a:hover {
-    text-decoration: underline;
-  }
-}
-
-
-@media (min-width: 1024px) {
-  footer {
-    padding: 20px 50px;
-    font-family: "Lexend Deca", sans-serif;
-  }
-
-
-
-
-  .footer-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 40px;
-  }
-
-
-
-
-  .footer-left {
-    max-width: 400px;
-    font-size: 12px;
-  }
-
-
-
-
-  .footer-logo {
-    height: 60px;
-    margin-bottom: 20px;
-  }
-
-
-
-
-  .footer-right {
-    display: flex;
-    gap: 20px;
-    margin-top: 20px;
-  }
-
-
-
-
-  .footer-column {
-    flex: 2;
-    min-width: 200px;
-    text-align: center;
-  }
-
-
-
-
-  .footer-column h3 {
-    font-weight: 400;
-    font-size: 14px;
-    color: #535151;
-    margin-bottom: 10px;
-  }
-
-
-
-
-  .footer-column a {
-    color: #EC9E07;
-    text-decoration: none;
-    font-size: 12px;
-    margin-bottom: 5px;
-  }
-
-
-
-
-  .footer-column a:hover {
-    text-decoration: underline;
-  }
-
-
-
-
-  .copyright {
-    margin-top: -20px;
-  }
-}
-
-
-@media (min-width: 1500px) {
-  footer {
-    padding: 20px 50px;
-    font-family: "Lexend Deca", sans-serif;
-  }
-
-
-
-
-  .footer-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 40px;
-  }
-
-
-
-
-  .footer-left {
-    max-width: 400px;
-    font-size: 12px;
-  }
-
-
-
-
-  .footer-logo {
-    height: 70px;
-    margin-bottom: 10px;
-  }
-
-
-
-
-  .footer-right {
-    display: flex;
-    gap: 20px;
-    margin-top: 20px;
-  }
-
-
-
-
-  .footer-column {
-    flex: 2;
-    min-width: 200px;
-    text-align: center;
-  }
-
-
-
-
-  .footer-column h3 {
-    font-weight: 400;
-    font-size: 14px;
-    color: #535151;
-    margin-bottom: 10px;
-  }
-
-
-
-
-  .footer-column a {
-    color: #EC9E07;
-    text-decoration: none;
-    font-size: 12px;
-    margin-bottom: 5px;
-  }
-
-
-
-
-  .footer-column a:hover {
-    text-decoration: underline;
-  }
-}
-@media (min-width: 1000px) {
-  .navbar-nav {
-    margin-left: 20px;
-    margin-right: auto;
-  }
-}
-
-
-@media (max-width: 1024px) {
-  .mr-auto {
-    border: none;
-  }
-}
-
-
-/* Corrigido para não interferir com o comportamento do Bootstrap */
-@media (max-width: 991px) {
-  .navbar-brand {
-    margin-right: 0;
-  }
- 
-  .navbar-toggler {
-    margin-right: 15px;
-  }
- 
-  /* Remove o alinhamento centralizado em telas menores */
-  #conteudoNavbarSuportado {
-    text-align: left !important;
-  }
- 
-  .navbar-collapse.show .navbar-nav,
-  .navbar-collapse.collapsing .navbar-nav {
-    flex-direction: column;
-    align-items: flex-start;
-    margin-left: 0;
-    margin-right: 0;
-    width: 100%;
-  }
- 
-  .nav-centralizada {
-    display: block;
-    width: 100%;
-    text-align: left;
-    justify-content: flex-start;
-  }
- 
-  .btn-brown {
-    margin: 10px 0;
-    justify-content: flex-start;
-    display: block;
-    margin-right: auto;
-  }
- 
-  /* Garante que os itens de dropdown também fiquem alinhados à esquerda */
-  .dropdown-menu {
-    text-align: left;
-    padding-left: 15px;
-  }
-}
+    // Botões voltar
+    document.getElementById('voltar1').addEventListener('click', function() {
+        mudarEtapa(1, 0);
+    });
+    
+    document.getElementById('voltar2').addEventListener('click', function() {
+        mudarEtapa(2, 1);
+    });
+    
+    document.getElementById('voltar4').addEventListener('click', function() {
+        mudarEtapa(3, 2);
+    });
+
+    // Mostrar/ocultar senha
+    const iconesMostrarSenha = document.querySelectorAll('.mostrar-senha');
+    iconesMostrarSenha.forEach(icone => {
+        icone.addEventListener('click', toggleMostrarSenha);
+    });
+
+    // Validação de senha em tempo real
+    const campoSenha = document.getElementById('senha');
+    if (campoSenha) {
+        campoSenha.addEventListener('input', validarRequisitos);
+    }
+
+    // Máscaras para campos
+    const campoTelefone = document.getElementById('telefone');
+    if (campoTelefone) {
+        campoTelefone.addEventListener('input', function() {
+            this.value = formatarTelefone(this.value);
+        });
+    }
+
+    const campoCPF = document.getElementById('cpf');
+    if (campoCPF) {
+        campoCPF.addEventListener('input', function() {
+            this.value = formatarCPF(this.value);
+        });
+    }
+
+    const campoCEP = document.getElementById('cep');
+    if (campoCEP) {
+        campoCEP.addEventListener('input', function() {
+            this.value = formatarCEP(this.value);
+        });
+    }
+
+    const campoRG = document.getElementById('rg');
+    if (campoRG) {
+        campoRG.addEventListener('input', function() {
+            this.value = formatarRG(this.value);
+        });
+    }
+
+    // Função para alternar visibilidade da senha
+    function toggleMostrarSenha(e) {
+        const campoSenhaProximo = e.target.closest('.input-wrapper').querySelector('input');
+        if (campoSenhaProximo.type === 'password') {
+            campoSenhaProximo.type = 'text';
+            e.target.classList.remove('fa-eye');
+            e.target.classList.add('fa-eye-slash');
+        } else {
+            campoSenhaProximo.type = 'password';
+            e.target.classList.remove('fa-eye-slash');
+            e.target.classList.add('fa-eye');
+        }
+    }
+
+    // Função para mudar de etapa
+    function mudarEtapa(etapaAtual, proximaEtapa) {
+        console.log('Mudando da etapa', etapaAtual, 'para', proximaEtapa);
+        
+        // Verificar se os elementos existem antes de manipulá-los
+        if (!etapas[etapaAtual] || !etapas[proximaEtapa]) {
+            console.error('Etapa não encontrada:', etapaAtual, proximaEtapa);
+            return;
+        }
+        
+        // Ocultar todas as etapas primeiro
+        etapas.forEach((etapa, index) => {
+            if (etapa) {
+                etapa.style.display = 'none';
+                if (passosContainers[index]) {
+                    passosContainers[index].style.display = 'none';
+                }
+                if (passos[index]) {
+                    passos[index].classList.remove('ativo');
+                }
+            }
+        });
+        
+        // Mostrar próxima etapa
+        etapas[proximaEtapa].style.display = 'block';
+        if (passosContainers[proximaEtapa]) {
+            passosContainers[proximaEtapa].style.display = 'flex';
+        }
+        
+        // Atualizar indicadores de passo
+        if (passos[proximaEtapa]) {
+            passos[proximaEtapa].classList.add('ativo');
+        }
+        
+        // Rolar para o topo
+        window.scrollTo(0, 0);
+    }
+
+    // Validação da etapa 1
+    function validarEtapa1(e) {
+        e.preventDefault();
+        
+        // Verificar se campos obrigatórios estão preenchidos
+        const nome = document.getElementById('nome-completo').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const senha = document.getElementById('senha').value;
+        const confirmaSenha = document.getElementById('confirma-senha').value;
+        
+        if (!nome) {
+            mostrarErro('Por favor, preencha o nome completo.');
+            return;
+        }
+        
+        if (!email || !validarEmail(email)) {
+            mostrarErro('Por favor, insira um e-mail válido.');
+            return;
+        }
+        
+        if (!validarSenhaCompleta(senha)) {
+            mostrarErro('A senha não atende a todos os requisitos.');
+            return;
+        }
+        
+        if (senha !== confirmaSenha) {
+            mostrarErro('As senhas não coincidem.');
+            return;
+        }
+        
+        // Se passou por todas as validações, avança para a próxima etapa
+        mudarEtapa(0, 1);
+    }
+
+    // Validação da etapa 2
+    function validarEtapa2(e) {
+        e.preventDefault();
+        
+        // Verificar se campos obrigatórios estão preenchidos
+        const telefone = document.getElementById('telefone').value.trim();
+        const endereco = document.getElementById('endereco').value.trim();
+        const cpf = document.getElementById('cpf').value.trim();
+        const rg = document.getElementById('rg').value.trim();
+        const cep = document.getElementById('cep').value.trim();
+        
+        if (!telefone || telefone.length < 14) {
+            mostrarErro('Por favor, insira um número de telefone válido.');
+            return;
+        }
+        
+        if (!endereco) {
+            mostrarErro('Por favor, preencha o endereço completo.');
+            return;
+        }
+        
+        if (!validarCPF(cpf.replace(/\D/g, ''))) {
+            mostrarErro('CPF inválido. Por favor, verifique.');
+            return;
+        }
+        
+        if (!validarRG(rg)) {
+            mostrarErro('RG inválido. Por favor, verifique.');
+            return;
+        }
+        
+        if (!validarCEP(cep)) {
+            mostrarErro('CEP inválido. Formato esperado: XXXXX-XXX');
+            return;
+        }
+        
+        // Se passou por todas as validações, avança para a próxima etapa
+        mudarEtapa(1, 2);
+    }
+
+    // Validação da etapa 3
+    function validarEtapa3(e) {
+        e.preventDefault();
+        
+        const foto = document.getElementById('filedon').files[0];
+        const video = document.getElementById('videodon').files[0];
+        const observacoes = document.getElementById('campos').value.trim();
+        
+        if (!foto) {
+            mostrarErro('Por favor, faça o upload da foto 3x4.');
+            return;
+        }
+        
+        if (!validarFoto(foto)) {
+            mostrarErro('A foto deve estar em um formato de imagem válido (jpg, jpeg, png).');
+            return;
+        }
+        
+        if (!video) {
+            mostrarErro('Por favor, faça o upload do vídeo esclarecedor.');
+            return;
+        }
+        
+        if (!validarVideo(video)) {
+            mostrarErro('O vídeo deve ter no máximo 200MB e estar em um formato de vídeo válido.');
+            return;
+        }
+        
+        if (!observacoes) {
+            mostrarErro('Por favor, preencha o campo de observações.');
+            return;
+        }
+        
+        console.log('Validação da etapa 3 passou, tentando mudar para etapa 4');
+        // Correção: Garantir que estamos mudando da etapa 2 para a etapa 3 corretamente
+        mudarEtapa(2, 3);
+    }
+
+    // Validação da etapa 4 (final)
+    function validarEtapa4(e) {
+        e.preventDefault();
+        
+        const estadoCivil = document.querySelector('input[name="estado-civil"]:checked');
+        const numeroPessoas = document.getElementById('numerodepessoas').value.trim();
+        const ocupacao = document.getElementById('ocupacao').value.trim();
+        const termosAceitos = document.getElementById('termos').checked;
+        
+        if (!estadoCivil) {
+            mostrarErro('Por favor, selecione seu estado civil.');
+            return;
+        }
+        
+        if (!numeroPessoas || numeroPessoas <= 0) {
+            mostrarErro('Por favor, insira um número válido de pessoas na casa.');
+            return;
+        }
+        
+        if (!ocupacao) {
+            mostrarErro('Por favor, informe sua ocupação/profissão.');
+            return;
+        }
+        
+        if (!termosAceitos) {
+            mostrarErro('Para prosseguir, você precisa aceitar os termos de uso e a política de privacidade.');
+            return;
+        }
+        
+        // Finaliza o cadastro (normalmente enviaria para o servidor)
+        alert('Cadastro realizado com sucesso! Você receberá um e-mail de confirmação.');
+        // Aqui seria feito o envio dos dados para o servidor
+        // window.location.href = 'pagina-de-sucesso.html';
+    }
+
+    // Funções de validação de campos específicos
+    function validarEmail(email) {
+        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return re.test(email);
+    }
+
+    function validarCPF(cpf) {
+        // Remove caracteres não numéricos
+        cpf = cpf.replace(/\D/g, '');
+        
+        // Verifica se tem 11 dígitos
+        if (cpf.length !== 11) return false;
+        
+        // Verifica se todos os dígitos são iguais (caso inválido)
+        if (/^(\d)\1{10}$/.test(cpf)) return false;
+        
+        // Validação do primeiro dígito verificador
+        let soma = 0;
+        for (let i = 0; i < 9; i++) {
+            soma += parseInt(cpf.charAt(i)) * (10 - i);
+        }
+        
+        let resto = soma % 11;
+        let dv1 = resto < 2 ? 0 : 11 - resto;
+        
+        if (dv1 !== parseInt(cpf.charAt(9))) return false;
+        
+        // Validação do segundo dígito verificador
+        soma = 0;
+        for (let i = 0; i < 10; i++) {
+            soma += parseInt(cpf.charAt(i)) * (11 - i);
+        }
+        
+        resto = soma % 11;
+        let dv2 = resto < 2 ? 0 : 11 - resto;
+        
+        if (dv2 !== parseInt(cpf.charAt(10))) return false;
+        
+        return true;
+    }
+
+    function validarRG(rg) {
+        // Remove caracteres não alfanuméricos
+        rg = rg.replace(/[^\w]/g, '');
+        
+        // RG deve ter entre 5 e 14 caracteres
+        return rg.length >= 5 && rg.length <= 14;
+    }
+
+    function validarCEP(cep) {
+        const re = /^[0-9]{5}-[0-9]{3}$/;
+        return re.test(cep);
+    }
+
+    function validarFoto(arquivo) {
+        // Verifica extensão
+        const tiposPermitidos = ['image/jpeg', 'image/jpg', 'image/png'];
+        return tiposPermitidos.includes(arquivo.type);
+    }
+
+    function validarVideo(arquivo) {
+        // Verifica se é um vídeo
+        if (!arquivo.type.startsWith('video/')) {
+            return false;
+        }
+        
+        // Verifica tamanho (máximo 200MB)
+        const tamanhoMaximo = 200 * 1024 * 1024; // 200MB em bytes
+        return arquivo.size <= tamanhoMaximo;
+    }
+
+    // Validação dos requisitos de senha em tempo real
+    function validarRequisitos() {
+        const senha = document.getElementById('senha').value;
+        
+        // Validar requisitos individuais
+        const oitoDigitos = senha.length >= 8;
+        const doisNumeros = (senha.match(/[0-9]/g) || []).length >= 2;
+        const caractereEspecial = /[!@#$%^&*(),.?":{}|<>]/.test(senha);
+        const letraMaiuscula = /[A-Z]/.test(senha);
+        
+        // Atualizar indicadores visuais
+        atualizarIndicadorRequisito('requisito-oito-digitos', oitoDigitos);
+        atualizarIndicadorRequisito('requisito-dois-numeros', doisNumeros);
+        atualizarIndicadorRequisito('requisito-caractere-especial', caractereEspecial);
+        atualizarIndicadorRequisito('requisito-letra-maiuscula', letraMaiuscula);
+    }
+
+    function atualizarIndicadorRequisito(id, cumprido) {
+        const elemento = document.getElementById(id);
+        if (elemento) {
+            if (cumprido) {
+                elemento.classList.add('cumprido');
+            } else {
+                elemento.classList.remove('cumprido');
+            }
+        }
+    }
+
+    function validarSenhaCompleta(senha) {
+        // Verifica todos os requisitos
+        const oitoDigitos = senha.length >= 8;
+        const doisNumeros = (senha.match(/[0-9]/g) || []).length >= 2;
+        const caractereEspecial = /[!@#$%^&*(),.?":{}|<>]/.test(senha);
+        const letraMaiuscula = /[A-Z]/.test(senha);
+        
+        return oitoDigitos && doisNumeros && caractereEspecial && letraMaiuscula;
+    }
+
+    // Funções de formatação de campos
+    function formatarTelefone(telefone) {
+        telefone = telefone.replace(/\D/g, '');
+        if (telefone.length > 11) telefone = telefone.substring(0, 11);
+        
+        if (telefone.length > 10) {
+            telefone = telefone.replace(/^(\d{2})(\d{5})(\d{4}).*/, '($1) $2-$3');
+        } else if (telefone.length > 6) {
+            telefone = telefone.replace(/^(\d{2})(\d{4})(\d{0,4}).*/, '($1) $2-$3');
+        } else if (telefone.length > 2) {
+            telefone = telefone.replace(/^(\d{2})(\d{0,5}).*/, '($1) $2');
+        } else if (telefone.length > 0) {
+            telefone = telefone.replace(/^(\d{0,2}).*/, '($1');
+        }
+        
+        return telefone;
+    }
+
+    function formatarCPF(cpf) {
+        cpf = cpf.replace(/\D/g, '');
+        if (cpf.length > 11) cpf = cpf.substring(0, 11);
+        
+        cpf = cpf.replace(/(\d{3})(\d)/, '$1.$2');
+        cpf = cpf.replace(/(\d{3})(\d)/, '$1.$2');
+        cpf = cpf.replace(/(\d{3})(\d{1,2})$/, '$1-$2');
+        
+        return cpf;
+    }
+
+    function formatarCEP(cep) {
+        cep = cep.replace(/\D/g, '');
+        if (cep.length > 8) cep = cep.substring(0, 8);
+        
+        cep = cep.replace(/^(\d{5})(\d{0,3}).*/, '$1-$2');
+        
+        return cep;
+    }
+
+    function formatarRG(rg) {
+        rg = rg.replace(/\D/g, '');
+        if (rg.length > 9) rg = rg.substring(0, 9);
+        
+        return rg;
+    }
+
+    // Função para mostrar erros no modal
+    function mostrarErro(mensagem) {
+        const modalBody = document.getElementById('erroSenhaModalBody');
+        if (modalBody) {
+            modalBody.textContent = mensagem;
+            
+            // Usa o Bootstrap para mostrar o modal
+            const erroModal = new bootstrap.Modal(document.getElementById('erroSenhaModal'));
+            erroModal.show();
+        } else {
+            // Fallback se o modal não existir
+            alert(mensagem);
+        }
+    }
+
+    // Adicionar CSS para indicadores de requisitos
+    const style = document.createElement('style');
+    style.textContent = `
+        .requisitos-senha p {
+            color: #888;
+            transition: color 0.3s ease;
+        }
+        .requisitos-senha .cumprido {
+            color: green;
+        }
+    `;
+    document.head.appendChild(style);
+
+    // Verificar se todos os elementos necessários existem e estão sendo carregados corretamente
+    console.log('Etapas carregadas:', etapas);
+    console.log('Passos containers carregados:', passosContainers);
+    console.log('Passos carregados:', passos);
+});
